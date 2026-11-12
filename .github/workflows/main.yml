@@ -15,7 +15,7 @@ jobs:
       - name: Fix folders and create project
         run: |
           rm -rf lib .github/workflows/build.yml
-          flutter create .
+          flutter create . --project-name meta_trade
           cat > lib/main.dart <<'EOF'
           import 'package:flutter/material.dart';
           void main() => runApp(const MetaTradeApp());
